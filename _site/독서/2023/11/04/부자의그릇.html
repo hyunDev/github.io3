@@ -938,15 +938,6 @@ function googleTranslateElementInit() {
       <ul>
         <li class="">
           <a class="post-link"
-            href="/%EB%8F%85%EC%84%9C/2023/11/04/%EB%B6%80%EC%9E%90%EC%9D%98%EA%B7%B8%EB%A6%87.html"
-            title="부자의 그릇을 읽고...">
-            부자의 그릇을 읽고...<span class="post-badges">
-  <span class="post-badge badge-top">TOP</span>
-  <span class="post-badge badge-new">NEW</span>
-</span>
-</a>
-        </li><li class="">
-          <a class="post-link"
             href="/react%20native/2023/11/04/ReactNative-%EA%B0%9C%EB%B0%9C%EA%B8%B0.html"
             title="React Native 개발기(1)">
             React Native 개발기(1)<span class="post-badges">
@@ -954,8 +945,56 @@ function googleTranslateElementInit() {
   <span class="post-badge badge-new">NEW</span>
 </span>
 </a>
+        </li><li class="">
+          <a class="post-link"
+            href="/%EB%8F%85%EC%84%9C/2023/11/04/%EB%B6%80%EC%9E%90%EC%9D%98%EA%B7%B8%EB%A6%87.html"
+            title="부자의 그릇을 읽고...">
+            부자의 그릇을 읽고...<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
         </li></ul>
-    </div><div class="post-comments"></div></section>
+    </div><div class="post-comments"><div id="utterances-placeholder"></div>
+<script>
+  const utterancesThemeFromDataTheme = () => {
+    const dataTheme = document.documentElement.getAttribute('data-theme');
+    return `github-${dataTheme}`;
+  };
+
+  const setUtterancesTheme = () => {
+    const iframe = document.querySelector('.utterances-frame');
+    if (iframe) {
+      const message = {
+        type: 'set-theme',
+        theme: utterancesThemeFromDataTheme()
+      };
+      iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+    }
+  }
+
+  // dynamic change
+  const observer = new MutationObserver((mutationsList, observer) => {
+    for (let mutation of mutationsList) {
+      if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+        setUtterancesTheme();
+      }
+    }
+  });
+  observer.observe(document.documentElement, { attributes: true, childList: false, subtree: false });
+
+  let utterancesScript = document.createElement('script');
+  utterancesScript.async = true;
+  utterancesScript.src = 'https://utteranc.es/client.js';
+  utterancesScript.crossOrigin = 'anonymous';
+  utterancesScript.setAttribute('issue-term', 'pathname');
+  utterancesScript.setAttribute('label', 'utterances comment');
+  utterancesScript.setAttribute('repo', 'hyundev/github.io.comment');
+  utterancesScript.setAttribute('theme', utterancesThemeFromDataTheme());
+
+  const placeholder = document.getElementById('utterances-placeholder');
+  placeholder.parentNode.replaceChild(utterancesScript, placeholder);
+</script></div></section>
 </div>
 
 

@@ -18,7 +18,7 @@
     {% assign reading_time = return %}
     <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>
   </div>
-  <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https{{ site.url | remove_first: 'https://' | remove_first: 'http://'}}{{ page.url }}%2Fhit-counter&count_bg=%23848484&title_bg=%23555555&icon=iconify.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+
   {%- if page.tags.size > 0 -%}
   <div class="post-tags">
     {%- for tag in page.tags -%}
@@ -26,5 +26,5 @@
     {%- endfor -%}
   </div>
   {%- endif -%}
-  
+
 </header>

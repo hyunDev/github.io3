@@ -4,21 +4,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Home | HyunDev</title>
+<title>Unity Animation image 반복효과 코드로 구현하기 | HyunDev</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Home" />
+<meta property="og:title" content="Unity Animation image 반복효과 코드로 구현하기" />
 <meta name="author" content="GitHub User" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="화면 개발이 즐거운 개발자" />
-<meta property="og:description" content="화면 개발이 즐거운 개발자" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<meta name="description" content="구현 내용 설명 unity로 게임 만들기를 하면서 이미지를 단순하게 반복해서 보여주는 ui 동작이 필요했다. unity는 코드를 사용하지 않고 애니메이션 동작을 만들고 해당 동작에 관련된 여려가지 기능을 제공했는데 아래의 gif 처럼 동작하면서 원하는 시간만큼 애니메이션을 보여주고 마지막 결과를 동기화를 맞춰서 하는 게 도저히 안되서 완전히 코드로 짜보았다." />
+<meta property="og:description" content="구현 내용 설명 unity로 게임 만들기를 하면서 이미지를 단순하게 반복해서 보여주는 ui 동작이 필요했다. unity는 코드를 사용하지 않고 애니메이션 동작을 만들고 해당 동작에 관련된 여려가지 기능을 제공했는데 아래의 gif 처럼 동작하면서 원하는 시간만큼 애니메이션을 보여주고 마지막 결과를 동기화를 맞춰서 하는 게 도저히 안되서 완전히 코드로 짜보았다." />
+<link rel="canonical" href="http://localhost:4000/unity/2023/11/05/Unity-Animation-code.html" />
+<meta property="og:url" content="http://localhost:4000/unity/2023/11/05/Unity-Animation-code.html" />
 <meta property="og:site_name" content="HyunDev" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-11-05T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Home" />
+<meta property="twitter:title" content="Unity Animation image 반복효과 코드로 구현하기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"GitHub User"},"description":"화면 개발이 즐거운 개발자","headline":"Home","name":"HyunDev","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"GitHub User"},"dateModified":"2023-11-05T00:00:00+09:00","datePublished":"2023-11-05T00:00:00+09:00","description":"구현 내용 설명 unity로 게임 만들기를 하면서 이미지를 단순하게 반복해서 보여주는 ui 동작이 필요했다. unity는 코드를 사용하지 않고 애니메이션 동작을 만들고 해당 동작에 관련된 여려가지 기능을 제공했는데 아래의 gif 처럼 동작하면서 원하는 시간만큼 애니메이션을 보여주고 마지막 결과를 동기화를 맞춰서 하는 게 도저히 안되서 완전히 코드로 짜보았다.","headline":"Unity Animation image 반복효과 코드로 구현하기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/unity/2023/11/05/Unity-Animation-code.html"},"url":"http://localhost:4000/unity/2023/11/05/Unity-Animation-code.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="icon" href="">
   <link rel="canonical" href="http://localhost:4000">
@@ -324,7 +325,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 
 
-<header class="site-header site-header-transparent" role="banner">
+<header class="site-header " role="banner">
 
   <div class="wrapper">
     <div class="site-header-inner"><span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
@@ -504,7 +505,7 @@ function googleTranslateElementInit() {
     var documentElement = document.documentElement;
 
     function storeScrollData() {
-      var y = getScrollPos().y;documentElement.setAttribute("data-header-transparent", "");var scrollStatus = "";
+      var y = getScrollPos().y;var scrollStatus = "";
 
       if (y <= 0) {
         scrollStatus = "top";
@@ -671,20 +672,7 @@ function googleTranslateElementInit() {
 
 
 
-<section class="page-banner">
-    <div class="page-banner-img"><div style="background-image: url(/assets/images/banners/home.jpeg)"></div>
-        <img class="img-placeholder" src="/assets/images/banners/home.jpeg"></div>
-    <div class="wrapper">
-      <div class="page-banner-inner"><div class="page-banner-default">
-            <h1 class="page-banner-heading">
-              HyunDev
-            </h1>
-            <h2 class="page-banner-subheading">
-              Simple is best
-            </h2>
-          </div></div>
-    </div>
-  </section><script>
+<script>
   function hashLocate(hashValue) {
     hashValue = hashValue.replace(/^.*#h-/, '');
     hashValue = decodeURIComponent(hashValue);
@@ -858,408 +846,308 @@ function googleTranslateElementInit() {
         <div class="framework">
   <section class="main">
 
-     <div class="articles">
-  
+     <div class="post">
+  <section>
 
-  
 
 
-  
 
 
 
 
-<div class="pagination">
-  <!-- Post list links -->
-  <ul class="post-list z-image-style">
-    <!-- Top list item --><!-- Normal list item -->
 
 
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">Unity Animation image 반복효과 코드로 구현하기</h1>
+  <h2 class="post-subtitle">처음하는 것은 많은 삽질을 동반한다. 하지만 그것도 모두 다 과정이다.</h2>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li class="post-item ">
-  <h2 class="post-title">
-    <a class="post-link" href="/unity/2023/11/05/Unity-Animation-code.html">
-      Unity Animation image 반복효과 코드로 구현하기<span class="post-badges">
-  <span class="post-badge badge-top">TOP</span>
-  <span class="post-badge badge-new">NEW</span>
-</span>
-</a>
-  </h2>
   <div class="post-meta">
-    <span class="post-date"><i class="fa fa-calendar"></i> Nov 05, 2023</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+    <time class="dt-published" datetime="2023-11-05T00:00:00+09:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Nov 05, 2023
+    </time>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
   </div>
-  <div class="post-excerpt"><a  class="post-image" href="/unity/2023/11/05/Unity-Animation-code.html" style="flex: 0 1 38.2%">
-      <div style="background-image: url(/assets/images/default-image.jpeg); height: 160px"></div>
-    </a><a class="post-text" href="/unity/2023/11/05/Unity-Animation-code.html">
-      <p>구현 내용 설명
-unity로 게임 만들기를 하면서 이미지를 단순하게 반복해서 보여주는 ui 동작이 필요했다.
+  <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=httpslocalhost:4000/unity/2023/11/05/Unity-Animation-code.html%2Fhit-counter&count_bg=%23848484&title_bg=%23555555&icon=iconify.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a><div class="post-tags"><a class="post-tag" href="/tags.html#Unity">#Unity</a><a class="post-tag" href="/tags.html#Animation">#Animation</a><a class="post-tag" href="/tags.html#Image repeat">#Image repeat</a></div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <h2 id="구현-내용-설명">구현 내용 설명</h2>
+<p>unity로 게임 만들기를 하면서 이미지를 단순하게 반복해서 보여주는 ui 동작이 필요했다.
 unity는 코드를 사용하지 않고 애니메이션 동작을 만들고 해당 동작에 관련된 여려가지 기능을 제공했는데
-아래의 gif 처럼 동작하면서 원하는 시간만큼 애니메이션을 보여주고 마지막 결과를 동기화를 맞춰서 하는 게 도저히 안되서 완전히 코드로 짜보았다.
-
-
-
-코드 설명
-이미지 순환의 반복 작업을 수행하기 위해 코루틴을 사용했다.
-Image_1, Image_2, Image_3 은 각각 가위, 바위, 보 jpg 파일이다.
-
-void start() {
-    // 이미지 animation 시작
-    StartCo... <span class="read_more">Read More</span></p>
-    </a>
-  </div>
-  <div class="post-tags"><a class="post-tag" href="/tags.html#Unity">#Unity</a><a class="post-tag" href="/tags.html#Animation">#Animation</a><a class="post-tag" href="/tags.html#Image repeat">#Image repeat</a></div>
-</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li class="post-item ">
-  <h2 class="post-title">
-    <a class="post-link" href="/%EB%8F%85%EC%84%9C/2023/11/04/%EB%B6%80%EC%9E%90%EC%9D%98%EA%B7%B8%EB%A6%87.html">
-      부자의 그릇을 읽고...<span class="post-badges">
+아래의 gif 처럼 동작하면서 원하는 시간만큼 애니메이션을 보여주고 마지막 결과를 동기화를 맞춰서 하는 게 도저히 안되서 완전히 코드로 짜보았다.</p>
+
+<p><img src="https://hyundev.github.io/assets/images/rock_paper_anim.gif" /></p>
+
+<h2 id="코드-설명">코드 설명</h2>
+<p>이미지 순환의 반복 작업을 수행하기 위해 코루틴을 사용했다.
+Image_1, Image_2, Image_3 은 각각 가위, 바위, 보 jpg 파일이다.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">start</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// 이미지 animation 시작</span>
+    <span class="n">StartCoroutine</span><span class="p">(</span><span class="n">startComImageAnim</span><span class="p">(</span><span class="n">com</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="c1">// 특정 이미지로 변경</span>
+<span class="k">public</span> <span class="kt">void</span> <span class="nf">setComImage</span><span class="p">(</span><span class="kt">int</span> <span class="n">choice</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">objComImage</span><span class="p">.</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">Image</span><span class="o">&gt;</span><span class="p">().</span><span class="n">sprite</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">.</span><span class="n">Load</span><span class="o">&lt;</span><span class="n">Sprite</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"Image_"</span> <span class="o">+</span> <span class="n">choice</span><span class="p">)</span> <span class="n">as</span> <span class="n">Sprite</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">IEnumerator</span> <span class="nf">startComImageAnim</span><span class="p">(</span><span class="kt">int</span> <span class="n">choice</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 애니메이션 수행 시간</span>
+    <span class="kt">float</span> <span class="n">changeTime</span> <span class="o">=</span> <span class="mi">10</span><span class="n">f</span><span class="p">;</span>
+    <span class="c1">// 애니메이션을 수행하면서 보여줄 이미지 index 번호</span>
+    <span class="kt">int</span> <span class="n">curOrder</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">changeTime</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="n">f</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">changeTime</span> <span class="o">-=</span> <span class="mi">1</span><span class="n">f</span><span class="p">;</span>
+        <span class="n">setComImage</span><span class="p">(</span><span class="n">curOrder</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+        <span class="n">curOrder</span><span class="o">++</span><span class="p">;</span>
+        <span class="c1">// 0.2초 대기 후 애니메이션 종료</span>
+        <span class="n">yield</span> <span class="k">return</span> <span class="k">new</span> <span class="n">WaitForSeconds</span><span class="p">(</span><span class="mf">0.2</span><span class="n">f</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="c1">// 최종 이미지 세팅</span>
+    <span class="n">setComImage</span><span class="p">(</span><span class="n">choice</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+    </div>
+
+</article>
+<div class="post-nav"><a class="previous" href="/%EB%8F%85%EC%84%9C/2023/11/04/%EB%B6%80%EC%9E%90%EC%9D%98%EA%B7%B8%EB%A6%87.html" title="부자의 그릇을 읽고...">부자의 그릇을 읽고...</a><span></span></div><div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li class="">
+          <a class="post-link"
+            href="/%EB%8F%85%EC%84%9C/2023/11/04/%EB%B6%80%EC%9E%90%EC%9D%98%EA%B7%B8%EB%A6%87.html"
+            title="부자의 그릇을 읽고...">
+            부자의 그릇을 읽고...<span class="post-badges">
   <span class="post-badge badge-top">TOP</span>
   <span class="post-badge badge-new">NEW</span>
 </span>
 </a>
-  </h2>
-  <div class="post-meta">
-    <span class="post-date"><i class="fa fa-calendar"></i> Nov 04, 2023</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
-  </div>
-  <div class="post-excerpt"><a  class="post-image" href="/%EB%8F%85%EC%84%9C/2023/11/04/%EB%B6%80%EC%9E%90%EC%9D%98%EA%B7%B8%EB%A6%87.html" style="flex: 0 1 38.2%">
-      <div style="background-image: url(/assets/images/default-image.jpeg); height: 160px"></div>
-    </a><a class="post-text" href="/%EB%8F%85%EC%84%9C/2023/11/04/%EB%B6%80%EC%9E%90%EC%9D%98%EA%B7%B8%EB%A6%87.html">
-      <p>
-
-저자:이즈미 마사토
-
-읽게된 동기
-퇴사 후에 조금이라도 돈을 벌 수 있는 파이프라인을 구축하는 것에 관심을 많이 같게 되었고 자연스레 돈에 관련한 책을 자주 읽게 되었다.
-
-요즘은 밀리의서재를 구독해서 책을 읽고 있는데 돈에 관련된 책 중에 감동을 받았다는 후기를 보게 되었다. 이런 분야의 책을 읽고는 감동을 받기는 어려운데 어떤 내용이지 하는 호기심에 읽기 시작했다. 짧은 내용의 소설 형식으로 되어 있어 한번에 다 읽어 버렸다. 그리고 책의 제목에서 그릇이라는 단어와 상통하는 깨달음을 얻었다.
-
-책 줄거리
-약스포주의
-
-토글 접기/펼치기
-
-    이 책은 주인공이 굶주린 밤에 자판기에서 음료를 뽑을 돈도 없어서... <span class="read_more">Read More</span></p>
-    </a>
-  </div>
-  <div class="post-tags"><a class="post-tag" href="/tags.html#경제학">#경제학</a><a class="post-tag" href="/tags.html#경영학">#경영학</a><a class="post-tag" href="/tags.html#경제경영학">#경제경영학</a><a class="post-tag" href="/tags.html#돈">#돈</a><a class="post-tag" href="/tags.html#부자">#부자</a><a class="post-tag" href="/tags.html#부자학">#부자학</a></div>
-</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li class="post-item ">
-  <h2 class="post-title">
-    <a class="post-link" href="/react%20native/2023/11/04/ReactNative-%EA%B0%9C%EB%B0%9C%EA%B8%B0.html">
-      React Native 개발기(1)<span class="post-badges">
+        </li><li class="">
+          <a class="post-link"
+            href="/unity/2023/11/05/Unity-Animation-code.html"
+            title="Unity Animation image 반복효과 코드로 구현하기">
+            Unity Animation image 반복효과 코드로 구현하기<span class="post-badges">
   <span class="post-badge badge-top">TOP</span>
   <span class="post-badge badge-new">NEW</span>
 </span>
 </a>
-  </h2>
-  <div class="post-meta">
-    <span class="post-date"><i class="fa fa-calendar"></i> Nov 04, 2023</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
-  </div>
-  <div class="post-excerpt"><a  class="post-image" href="/react%20native/2023/11/04/ReactNative-%EA%B0%9C%EB%B0%9C%EA%B8%B0.html" style="flex: 0 1 38.2%">
-      <div style="background-image: url(/assets/images/default-image.jpeg); height: 160px"></div>
-    </a><a class="post-text" href="/react%20native/2023/11/04/ReactNative-%EA%B0%9C%EB%B0%9C%EA%B8%B0.html">
-      <p>개발환경 설정
+        </li><li class="">
+          <a class="post-link"
+            href="/react%20native/2023/11/04/ReactNative-%EA%B0%9C%EB%B0%9C%EA%B8%B0.html"
+            title="React Native 개발기(1)">
+            React Native 개발기(1)<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li></ul>
+    </div><div class="post-comments"><div id="utterances-placeholder"></div>
+<script>
+  const utterancesThemeFromDataTheme = () => {
+    const dataTheme = document.documentElement.getAttribute('data-theme');
+    return `github-${dataTheme}`;
+  };
 
-개발을 하기 위해서는 개발환경을 먼저 설정해야 한다. 
-chat gpt에 react native 개발환경 설정을 알려달라고 해봤다.
-아주 자세히 잘 알려준다. 그런데 그대로 했더니 안된다;;;
-알고 봤더니 mac m1 cpu에서는 개발환경을 설정하는 방법이 다른 거 였다.
-google에 검색해서 다시 해보았다.
-mac으로 개발환경을 설정 하는 경우 intel, m1, m2 cpu별로 개발환경 설정이 다르니 주의가 필요하다.
+  const setUtterancesTheme = () => {
+    const iframe = document.querySelector('.utterances-frame');
+    if (iframe) {
+      const message = {
+        type: 'set-theme',
+        theme: utterancesThemeFromDataTheme()
+      };
+      iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+    }
+  }
 
-라이브러리 사용
+  // dynamic change
+  const observer = new MutationObserver((mutationsList, observer) => {
+    for (let mutation of mutationsList) {
+      if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+        setUtterancesTheme();
+      }
+    }
+  });
+  observer.observe(document.documentElement, { attributes: true, childList: false, subtree: false });
 
-React Native를 혼자 개발하다 보면 직접 개발하기보다는 라이브러리를 사용하는 것이 성능이 더 좋아서 라이브러리를 사용하게 된다. 그런데 React N... <span class="read_more">Read More</span></p>
-    </a>
-  </div>
-  <div class="post-tags"><a class="post-tag" href="/tags.html#React Native">#React Native</a><a class="post-tag" href="/tags.html#Android Develop">#Android Develop</a><a class="post-tag" href="/tags.html#IOS Develop">#IOS Develop</a></div>
-</li>
-</ul>
+  let utterancesScript = document.createElement('script');
+  utterancesScript.async = true;
+  utterancesScript.src = 'https://utteranc.es/client.js';
+  utterancesScript.crossOrigin = 'anonymous';
+  utterancesScript.setAttribute('issue-term', 'pathname');
+  utterancesScript.setAttribute('label', 'utterances comment');
+  utterancesScript.setAttribute('repo', 'hyundev/github.io.comment');
+  utterancesScript.setAttribute('theme', utterancesThemeFromDataTheme());
 
-  <!-- Pagination links --></div>
+  const placeholder = document.getElementById('utterances-placeholder');
+  placeholder.parentNode.replaceChild(utterancesScript, placeholder);
+</script></div></section>
 </div>
 
 
   </section>
   <section class="sidebar" style="margin-left: 15px;">
-    <!-- Get sidebar items -->
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="common-list">
-  <ul>
-    <li>
-      <a href="/index.html">
-        All<span>3</span>
-      </a>
-    </li>
-
-    
-      <li>
-        <a href="/categories.html#h-React Native">
-          React Native <span>1</span>
-        </a>
-      </li>
-    
-      <li>
-        <a href="/categories.html#h-Unity">
-          Unity <span>1</span>
-        </a>
-      </li>
-    
-      <li>
-        <a href="/categories.html#h-독서">
-          독서 <span>1</span>
-        </a>
-      </li>
-    
-  </ul>
+<div class="post-menu">
+  <div class="post-menu-title">Table Of Contents</div>
+  <div class="post-menu-content"></div>
 </div>
 
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
 </section>
 </div>
 

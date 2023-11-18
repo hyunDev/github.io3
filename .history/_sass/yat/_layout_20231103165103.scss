@@ -530,10 +530,6 @@ html {
     color: $grey-color;
     line-height: 15px;
     max-width: 50%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
   }
 
   .previous:before {

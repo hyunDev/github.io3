@@ -191,7 +191,7 @@ html[data-scroll-status='down'] .framework .sidebar { top: 20px; }
 
 /** Posts misc */
 .post-nav { display: flex; justify-content: space-between; margin: 72px 0 59px; padding: 31px 0 0; }
-.post-nav a { font-size: 15.75px; color: #777; line-height: 15px; max-width: 50%; }
+.post-nav a { font-size: 15.75px; color: #777; line-height: 15px; max-width: 50%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-break: break-all; }
 .post-nav .previous:before { content: ' '; border: solid #787878; border-width: 0 2px 2px 0; display: inline-block; padding: 4px; margin-right: 8px; transform: rotate(135deg); -webkit-transform: rotate(135deg); }
 .post-nav .next:after { content: ' '; border: solid #787878; border-width: 0 2px 2px 0; display: inline-block; padding: 4px; margin-left: 8px; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); }
 

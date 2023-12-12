@@ -29,7 +29,6 @@ title: About
 ## 🛠️ SKILL
 
 ### Front End
-
 <div class="chart-container front-end-skill-container"></div>
 
 
@@ -107,6 +106,19 @@ title: About
 * 개발 내용
   1. 패션 물품 재고관리 페이지 개발
 
+## 🚀 개인프로젝트
+
+**프로젝트명: Wage Calculator**
+* 사용기술: React Native
+* 프로젝트 내용: 사용자가 시급을 입력해 일하는 동안 벌어드인 돈을 계산하는 어플리케이션
+* 개발 과정: 아는 분의 요청으로 기획 및 개발, 안드로이드 플레이스토어에 출시
+* [구글 플레이 링크](https://play.google.com/store/apps/details?id=com.wagecalculator)
+
+**프로젝트명: Fantasy Shisen-Sho**
+* 사용기술: Unity, c#
+* 프로젝트 내용: Fantasy 게임에 등장하는 아이템 타일들을 이용하여 사천성 규칙에 의해서 타일을 맞추는 퍼즐 게임
+* 개발 과정: 사천성 규칙 판단을 위해, BFS 알고리즘 활용 및 맞추어진 타일 경로 애니메이션 구현 등을 개발, 광고를 통한 수입 목적 개발 및 출시
+* [구글 플레이 링크](https://play.google.com/store/apps/details?id=com.SimpleIsBestByHyun.FantasyShisenSho)
 
 ## 🏆 CERTIFICATE
 
@@ -139,6 +151,7 @@ title: About
 
 
 ## ⁉ ETC
+
 **경험/활동/교육**
 
 * 2016.03 ~ 2016.08 (6개월)

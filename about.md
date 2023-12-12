@@ -27,7 +27,7 @@ title: About
 
 
 ## 🛠️ SKILL
-(3: 제품개발 가능, 2: 능숙하지는 않지만 개발 가능, 1: 경험해본 적 있음)
+
 ### Front End
 
 <div class="chart-container front-end-skill-container"></div>

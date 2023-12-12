@@ -29,27 +29,16 @@ title: About
 ## 🛠️ SKILL
 (3: 제품개발 가능, 2: 능숙하지는 않지만 개발 가능, 1: 경험해본 적 있음)
 ### Front End
-* JavaScript - 3
-* AngularJS - 3
-* Vanilla Script -3
-* HTML/CSS - 3
-* SCSS - 3
-* React - 1
-* php - 2
-* jquery - 2
+
+<div class="chart-container front-end-skill-container"></div>
+
+
 ### Back End
-* Java - 2
-* Spring Boot - 2
-* MySQL - 3
-* PostgreSQL - 3
+<div class="chart-container back-end-skill-container"></div>
+
+
 ### Etc
-* C/C++ - 2
-* React Native - 2
-* Elastic Search - 1
-* webpack - 2
-* Git/Github - 3
-* svn(eclipse) - 3
-* Figma - (디자인 팀과 협업, Figma를 바탕으로 개발 경험)
+<div class="chart-container etc-skill-container"></div>
 
 
 ## 💼 Work Experience

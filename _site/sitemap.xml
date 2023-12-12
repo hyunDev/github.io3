@@ -35,8 +35,16 @@
 <loc>http://localhost:4000/tags/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/admin/admin-app/fantasy-shisen-sho/</loc>
+<lastmod>2023-12-04T15:57:49+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/admin/admin-app/fantasy-shisen-sho/privacy.html</loc>
+<lastmod>2023-12-04T15:57:49+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/admin/admin-app/rock-paper-scissors/</loc>
-<lastmod>2023-11-05T22:02:51+09:00</lastmod>
+<lastmod>2023-12-04T15:59:20+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/admin/admin-app/rock-paper-scissors/privacy.html</loc>

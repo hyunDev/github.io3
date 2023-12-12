@@ -861,7 +861,16 @@ function googleTranslateElementInit() {
 
     <div class="post-content e-content" itemprop="articleBody">
 
-      <h2 id="-front-end-developer">🧑🏻‍💻 Front End Developer</h2>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.js"></script>
+<script src="../js/about.js"></script>
+<style>
+  .tooltip {
+    position: relative;
+    width: fit-content;
+    height: 45px;
+  }
+</style>
+<h2 id="-front-end-developer">🧑🏻‍💻 Front End Developer</h2>
 <p><img src="https://hyundev.github.io/assets/images/hyunseo_profile.jpg" alt="example image" title="An exemplary image" />
 <strong>안녕하세요! 4년 차(2023년 기준), 화면 개발이 즐거운 개발자 김현서입니다.</strong></p>
 
@@ -886,31 +895,14 @@ function googleTranslateElementInit() {
 <h2 id="️-skill">🛠️ SKILL</h2>
 <p>(3: 제품개발 가능, 2: 능숙하지는 않지만 개발 가능, 1: 경험해본 적 있음)</p>
 <h3 id="front-end">Front End</h3>
-<ul>
-  <li>JavaScript - 3</li>
-  <li>AngularJS - 3</li>
-  <li>Vanilla Script -3</li>
-  <li>HTML/CSS - 3</li>
-  <li>SCSS - 3</li>
-  <li>React - 1</li>
-  <li>php - 2</li>
-  <li>jquery - 2
-    <h3 id="back-end">Back End</h3>
-  </li>
-  <li>Java - 2</li>
-  <li>Spring Boot - 2</li>
-  <li>MySQL - 3</li>
-  <li>PostgreSQL - 3
-    <h3 id="etc">Etc</h3>
-  </li>
-  <li>C/C++ - 2</li>
-  <li>React Native - 2</li>
-  <li>Elastic Search - 1</li>
-  <li>webpack - 2</li>
-  <li>Git/Github - 3</li>
-  <li>svn(eclipse) - 3</li>
-  <li>Figma - (디자인 팀과 협업, Figma를 바탕으로 개발 경험)</li>
-</ul>
+
+<div class="chart-container front-end-skill-container"></div>
+
+<h3 id="back-end">Back End</h3>
+<div class="chart-container back-end-skill-container"></div>
+
+<h3 id="etc">Etc</h3>
+<div class="chart-container etc-skill-container"></div>
 
 <h2 id="-work-experience">💼 Work Experience</h2>
 

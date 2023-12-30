@@ -50,7 +50,7 @@ title: About
 **프로젝트 : 자체 솔루션 3.0 개발**
 
 * 기간 : 21.03 - 23.05 (26개월)
-* 사용기술 : 자체 프론트 프레임워크 개발(proxy, redux 활용), vanilla script, es6이상, class형 컴포넌트, scss, webpack, babel, eslint
+* 사용기술 : 자체 프론트 프레임워크 개발(proxy, redux 활용), vanilla script, es6 이상 문법 사용, class형 컴포넌트, scss, webpack, babel, eslint
 * [프로젝트 시연 영상](https://www.youtube.com/watch?v=UxOh1jiwZMk)
 * 개발 내용
     1. 2.0의 경험을 바탕으로 더 나은 분석 제공을 위한 제품 개발

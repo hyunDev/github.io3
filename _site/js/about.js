@@ -2,9 +2,9 @@
 const frontLanguageData = [
     { language: 'Vanilla Script', level: 'Proficient' },
     { language: 'JavaScript', level: 'Proficient' },
-    { language: 'TypeScript', level: 'Experienced' },
+    { language: 'TypeScript', level: 'Development Possible' },
     { language: 'AngularJS', level: 'Proficient' },
-    { language: 'React', level: 'Experienced' },
+    { language: 'React', level: 'Development Possible' },
     { language: 'HTML/CSS', level: 'Proficient' },
     { language: 'SCSS', level: 'Development Possible' },
     { language: 'php', level: 'Development Possible' },

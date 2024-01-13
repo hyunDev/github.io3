@@ -116,6 +116,7 @@ title: About
 * 사용기술: TypeScript, React, Container/Presentational 패턴, Redux-toolkit, axios, react-chart, styled-component, KAKAO Map(Local) API
 * 프로젝트 내용: 시,도/구/동 선택 또는 주소 입력을 통해 해당 지역의 오늘 날씨를 그래프로 보여줍니다.
 * 개발 과정: 공부 목적을 위한 프로젝트 진행
+* [포트폴리오 링크](https://hyundev.github.io/assets/pdf/todayWeatherPortfolio.pdf)
 * [Git 링크](https://github.com/hyunDev/todayWeather)
 * 아키텍쳐: 
 ![example image](https://hyundev.github.io/assets/images/todayWeatherArchitecture.png "An exemplary image")

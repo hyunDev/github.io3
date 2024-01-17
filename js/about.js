@@ -14,8 +14,8 @@ const frontLanguageData = [
 const backLanguageData = [
     { language: 'Java', level: 'Development Possible' },
     { language: 'Sprint Boot', level: 'Experienced' },
-    { language: 'MySQL', level: 'Proficient' },
-    { language: 'PostgreSQL', level: 'Proficient' }
+    { language: 'MySQL', level: 'Development Possible' },
+    { language: 'PostgreSQL', level: 'Development Possible' }
 ]
 
 const etcLanguageData = [

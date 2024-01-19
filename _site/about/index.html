@@ -864,37 +864,105 @@ function googleTranslateElementInit() {
       <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.js"></script>
 <script src="../js/about.js"></script>
 <style>
-  .tooltip {
-    position: relative;
+  #about .sector-container {
+    @media (min-width:600px) {
+      display: flex;
+    }
+  }
+  #about .sector1 {
+    display: flex;
+    justify-content: center;
+  }
+  #about .sector1 img {
+    max-height: 35vh;
+    margin-right: 20px;
+  }
+  #about .chart-container {
+    
+  }
+  #about .tooltip {
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
     width: fit-content;
     height: 45px;
+    pointer-events: none;
+  }
+  #about p {
+    margin-bottom: 10px;
+  }
+  #about p, #about ul, #about li {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #about h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  #about h3 {
+    margin-top: 35px;
+    margin-bottom: 5px;
+  }
+  html[data-theme="dark"] #about h2 {
+    color: #FF9843
+  }
+  html[data-theme="dark"] h3 {
+    color: #3468C0
+  }
+  html[data-theme="dark"] strong {
+    color: #86A7FC
+  }
+
+  html[data-theme="light"] h2 {
+    color: #E48F45
+  }
+  html[data-theme="light"] h3 {
+    color: #994D1C
+  }
+  html[data-theme="light"] strong {
+    color: #6B240C
   }
 </style>
-<h2 id="-front-end-developer">🧑🏻‍💻 Front End Developer</h2>
-<p><img src="https://hyundev.github.io/assets/images/hyunseo_profile.jpg" alt="example image" title="An exemplary image" />
-<strong>안녕하세요! 4년 차(2023년 기준), 화면 개발이 즐거운 개발자 김현서입니다.</strong></p>
-
-<ul>
-  <li>Email: <a href="var.hyunseo@gmail.com">var.hyunseo@gmail.com</a></li>
-  <li>Github: <a href="https://github.com/hyunDev">https://github.com/hyunDev</a></li>
-  <li>Blog: <a href="https://writemylife.tistory">https://writemylife.tistory</a></li>
-</ul>
+<div id="about">
+<h2 id="-김현서hyunseo-kim">🧑🏻‍💻 김현서(Hyunseo Kim)</h2>
+<div class="sector-container">
+  <div class="sector1">
+    <img src="https://hyundev.github.io/assets/images/hyunseo_profile.jpg" />
+  </div>
+  <div class="sector2">
+    <strong>안녕하세요! <br />4년 차, 화면개발이 즐거운 프론트엔드 개발자 김현서입니다.</strong>
+    <h3>Contact</h3>
+    <ul>
+      <li>
+        Email: <a href="var.hyunseo@gmail.com">var.hyunseo@gmail.com</a>
+      </li>
+      <li>
+        Github: <a href="https://github.com/hyunDev">https://github.com/hyunDev</a>
+      </li>
+      <li>
+        Blog: <a href="https://hyundev.github.io">https://hyundev.github.io</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
 <h2 id="-about-me">🧑🏻 About Me</h2>
 
-<p>안녕하세요! 4년 차, 프론트엔드 개발자 김현서입니다. 사용자가 직접 이용하게 될 화면을 개발하는 것에 매력을 느껴 프론트엔드 개발을 시작하게 되었습니다.</p>
+<p>안녕하세요! 4년 차, 프론트엔드 개발자 김현서입니다. 
+사용자가 직접 이용하게 될 화면을 개발하는 것에 매력을 느껴 프론트엔드 개발을 시작하게 되었습니다.</p>
 
-<p>1, 2년 차에는 회사에서 운영하던 솔루션의 2.0 버전의 오류 수정 및 기능 개선에 참여하여, front end와 back end를 모두 경험할 수 있었습니다. Angular와 Elastic Search를 활용하여 성능을 개선하고, 사용자 경험을 향상시키는 데에 주력하였습니다.</p>
+<p>지난 3년간 데이터 시각화 솔루션을 개발하는 스타트업에서 유지보수와 개발초기 단계부터 서비스 배포까지 경험하였습니다.
+1, 2년 차에는 회사에서 운영하던 솔루션의 2.0 버전의 오류 수정 및 기능 개선을 수행했습니다. 
+이후 3, 4년 차에는 솔루션 3.0 개발에서 front end 개발을 담당하였습니다. 
+또한 최신 프론트엔드 기술 트렌드에 뒤쳐지지 않기 위해 개인 공부와 사이드프로젝트를 진행하고 있습니다.</p>
 
-<p>이후 3, 4년 차에는 솔루션 3.0 개발에서 front end 개발을 담당하였습니다. 3.0 솔루션에서는 원하는 기능을 모두 구현하기 위해 자체 front framework를 개발하였습니다. 이를 위해 vanilla script와 최신 front framework에서 사용되는 기술인 proxy, redux 등을 적극적으로 활용하였습니다.</p>
-
-<p>개발한 솔루션은 프로세스 마이닝을 위한 대용량 데이터 기반 데이터 시각화 프로그램입니다.</p>
-
-<p>저는 효율적으로 일하는 것을 중요시해 개발팀의 업무 개선을 위한 방법을 자주 고민했습니다. 당시에 진행했던 코드리뷰가 비효율적으로 느껴져 코드리뷰 방법을 개선하자고 제안을 했었습니다. 또한 자체 프레임워크를 개발하면서 팀원들이 프레임워크를 쉽게 이해하고 사용할 수 있도록 Developer Guide 초안을 제작하여 공유하고 사용을 제안했습니다.</p>
-
-<p>사이드 프로젝트로 TypeScript, React를 활용해 오늘의날씨를 그래프로 시각화해서 편하게 볼 수있는 프로그램을 개발했습니다.
-프로젝트를 진행하면서 Container/Presentational 패턴을 사용했고 Redux-toolkit을 활용한 상태 관리와 styled-component를 이용한 동적 스타일링을 능숙하게 다룰 수 있게 되었습니다.</p>
-
+<p>저는 모르는 것을 인정하고 새로운 기술을 배우는 것을 좋아합니다.
+사내에서 팀원들과 적극적으로 소통하고 코드리뷰도 적극적으로 참여해
+더 나은 코드를 짜기 위한 노력을 아끼지 않았습니다.
+더 좋은 프론트엔드 개발자가 되기 위해 노력하고 있습니다.</p>
 <h2 id="️-skill">🛠️ SKILL</h2>
 
 <h3 id="front-end">Front End</h3>
@@ -922,24 +990,27 @@ function googleTranslateElementInit() {
   <li><a href="https://www.youtube.com/watch?v=UxOh1jiwZMk">프로젝트 시연 영상</a></li>
   <li>개발 내용
     <ol>
-      <li>
-        <p>2.0의 경험을 바탕으로 더 나은 분석 제공을 위한 제품 개발</p>
-      </li>
-      <li>
-        <p>효과적인 데이터 시각화 구현을 위해 자체 Front Frame Work 개발</p>
-      </li>
+      <li>2.0의 경험을 바탕으로 더 나은 분석 제공을 위한 3.0 솔루션 개발</li>
+      <li>효과적인 데이터 시각화 구현을 위해 자체 Front Frame Work 개발</li>
     </ol>
   </li>
   <li>주요 담당 개발 내용
     <ol>
       <li>grid 라이브러리 개발
         <ul>
-          <li>많은 양의 컴포넌트(1000개 이상) 렌더링 위해 코드 최적화를 통한 성능 개선(컴포넌트가 상속 받은 코드들중 사용되지 않는 코드들이 실행되지 않도록 처리)</li>
-          <li>이벤트 버블링의 원리를 이용해 컴포넌트에 바인드 된 이벤트 수를 줄이고 이벤트가 발생하는 class 이름을 이용한 이벤트 제어를 통해 성능 개선 작업(화면에 렌더링 된 컴포넌트 단위가 1000개가 넘어가도 컴포넌트에 대한 이벤트 정상작동)</li>
           <li>대용량 grid 시각화 처리(tr, td 컴포넌트 화, 이벤트 바인드 최적화)</li>
-          <li>virtual scroll 개발(사용자가 원할 때 추가 렌더링)</li>
           <li>셀 내에 막대 그래프 표시</li>
           <li>행, 열 길이 조정, 이동 구현</li>
+          <li>개발을 진행하면서 겪은 이슈 및 성능 개선 기여한 내용
+            <blockquote>
+              <p>많은 양의 컴포넌트 렌더링(1000개 이상)으로 인한 속도 저하</p>
+              <ul>
+                <li>많은 양의 컴포넌트(1000개 이상) 렌더링 위해 코드 최적화를 통한 성능 개선(class형 컴포넌트가 상속 받은 코드들 중 사용되지 않는 코드들이 실행되지 않도록 처리)</li>
+                <li>이벤트 버블링의 원리를 이용해 컴포넌트들에게 바인드 된 이벤트 없애고 각 이벤트가 발생하는 class 이름을 이용한 이벤트 제어를 통해 성능 개선 작업</li>
+                <li>click 이벤트를 차트에 한개 만 bind 하고 발생한 component를 구분해서 해당 component에 맞는 click event 로직이 실행되도록 함</li>
+              </ul>
+            </blockquote>
+          </li>
         </ul>
       </li>
       <li>web memo editor 구현
@@ -953,30 +1024,32 @@ function googleTranslateElementInit() {
   <li>개발 진행
     <ul>
       <li>기획문서 확인 및 피그마를 통해서 UI, UX 확인</li>
-      <li>개발팀 회의 및 코드 리뷰를 통해 개발 계획 수립</li>
-      <li>담당 기능 개발 및 오류 수정</li>
+      <li>주기적인 개발팀 회의 및 코드 리뷰 진행</li>
+      <li>테스트문서 확인을 통해 오류수정 및 이슈관리</li>
     </ul>
   </li>
 </ul>
 
-<p><strong>프로젝트 : 자체 솔루션 2.0 오류 개선, 기능 개선</strong></p>
+<p><br />
+<strong>프로젝트 : 자체 솔루션 2.0 오류 개선, 기능 개선</strong></p>
 
 <ul>
   <li>기간 : 19.10 - 21.03 (18개월)</li>
   <li>사용기술 : AngularJS, Elastic Search</li>
   <li><a href="https://www.youtube.com/watch?v=7FyYIkmuPQA">프로젝트 시연 영상</a></li>
   <li>개발 내용
-    <ol>
-      <li>
-        <p>2.0이 가지고 있는 오류 이슈 수정</p>
+    <ul>
+      <li>2.0이 가지고 있는 오류 및 성능 이슈 수정</li>
+      <li>컨설팅팀의 의견을 바탕으로 제품 ux 개선</li>
+      <li>개발을 진행하면서 겪은 이슈 및 성능 개선 기여한 내용
+        <blockquote>
+          <p>많은 양의 데이터를 다루다 보니 평균, 중앙값 등 의 값을 연산할 때 시간이 오래걸림</p>
+          <ul>
+            <li>자주 사용되는 값(평균, 중앙값, 데이터 시작,끝 timestamp) 등을 한번 연산이후 에 브라우저 캐쉬에 저장하도록 수정</li>
+          </ul>
+        </blockquote>
       </li>
-      <li>
-        <p>컨설팅팀의 의견을 바탕으로 제품 ux 개선</p>
-      </li>
-      <li>
-        <p>브라우저 캐쉬데이터를 이용한 성능 개선 등을 수행</p>
-      </li>
-    </ol>
+    </ul>
   </li>
 </ul>
 
@@ -988,12 +1061,8 @@ function googleTranslateElementInit() {
   <li><a href="https://www.youtube.com/watch?v=KpAL2htK1w4">프로젝트 시연 영상</a></li>
   <li>개발 내용
     <ol>
-      <li>
-        <p>카카오 알림 톡 API와 SMS API를 이용한 문자 전송 서비스</p>
-      </li>
-      <li>
-        <p>근로계약서 작성, 출퇴근 관리, 인건비 관리, 고객 스탬프 적립 기능</p>
-      </li>
+      <li>카카오 알림 톡 API와 SMS API를 이용한 문자 전송 서비스</li>
+      <li>근로계약서 작성, 출퇴근 관리, 인건비 관리, 고객 스탬프 적립 기능</li>
     </ol>
   </li>
   <li>주요 개발 내용
@@ -1099,6 +1168,7 @@ function googleTranslateElementInit() {
   <li>만기전역</li>
 </ul>
 
+</div>
 
 
     </div>

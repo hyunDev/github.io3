@@ -8,10 +8,68 @@ hidden:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.js"></script>
 <script src="../js/about.js"></script>
 <style>
-  .tooltip {
-    position: relative;
+  #about .sector-container {
+    @media (min-width:600px) {
+      display: flex;
+    }
+  }
+  #about .sector1 {
+    display: flex;
+    justify-content: center;
+  }
+  #about .sector1 img {
+    max-height: 35vh;
+    margin-right: 20px;
+  }
+  #about .chart-container {
+    
+  }
+  #about .tooltip {
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
     width: fit-content;
     height: 45px;
+    pointer-events: none;
+  }
+  #about p {
+    margin-bottom: 10px;
+  }
+  #about p, #about ul, #about li {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #about h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  #about h3 {
+    margin-top: 35px;
+    margin-bottom: 5px;
+  }
+  html[data-theme="dark"] #about h2 {
+    color: #FF9843
+  }
+  html[data-theme="dark"] h3 {
+    color: #3468C0
+  }
+  html[data-theme="dark"] strong {
+    color: #86A7FC
+  }
+
+  html[data-theme="light"] h2 {
+    color: #E48F45
+  }
+  html[data-theme="light"] h3 {
+    color: #994D1C
+  }
+  html[data-theme="light"] strong {
+    color: #6B240C
   }
 </style>
+<div id="about">
 {{ content }}
+</div>

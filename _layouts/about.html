@@ -38,9 +38,14 @@ hidden:
   #about p {
     margin-bottom: 10px;
   }
-  #about p, #about ul, #about li {
+  #about p, #about ul {
     font-size: 16px;
     font-weight: 600;
+  }
+  #about li {
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 3em;
   }
   #about h2 {
     margin-top: 40px;
@@ -51,23 +56,69 @@ hidden:
     margin-bottom: 5px;
   }
   html[data-theme="dark"] #about h2 {
-    color: #FF9843
+    color: #FF9843 
   }
-  html[data-theme="dark"] h3 {
+  html[data-theme="dark"] h3, html[data-theme="dark"] h4 {
     color: #3468C0
   }
   html[data-theme="dark"] strong {
     color: #86A7FC
   }
+  html[data-theme="dark"] .title strong {
+    color: #FF9843 
+  }
 
   html[data-theme="light"] h2 {
     color: #E48F45
   }
-  html[data-theme="light"] h3 {
+  html[data-theme="light"] h3, html[data-theme="light"] h4 {
     color: #994D1C
   }
   html[data-theme="light"] strong {
     color: #6B240C
+  }
+  html[data-theme="light"] .title strong {
+    color: #E48F45
+  }
+
+  html[data-theme="light"] #about .chapter {
+    border-bottom: 1px solid lightgray;
+  }
+  html[data-theme="dark"] #about .chapter {
+    border-bottom: 1px solid dimgray;
+  }
+  #about .row {
+    display: grid;
+    padding: 12px 0 15px 0;
+    grid-template-rows: auto auto;
+  }
+  #about .title {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    float: left;
+    padding-left:10px;
+  }
+  #about .sub-row {
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    padding: 12px 0 15px 0;
+    display: grid;
+    @media (min-width:600px) {
+      grid-template-columns: 200px auto;
+    }
+    @media (max-width:600px) {
+      grid-template-rows: auto auto;
+    }
+  }
+  #about .sub-title {
+    width: 200px;
+    margin-left: 25px;
+  }
+  #about .content {
+    font-size: 14px;
+    padding-left: 7px;
   }
 </style>
 <div id="about">

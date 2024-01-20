@@ -1,13 +1,11 @@
 // Data: Each language with its level
 const frontLanguageData = [
-  { language: "Vanilla Script", level: "Proficient", step: 3 },
   { language: "JavaScript", level: "Proficient", step: 3 },
   { language: "TypeScript", level: "Development Possible", step: 2 },
   { language: "AngularJS", level: "Proficient", step: 3 },
   { language: "React", level: "Development Possible", step: 2 },
   { language: "HTML/CSS", level: "Proficient", step: 3 },
   { language: "SCSS", level: "Development Possible", step: 2 },
-  { language: "php", level: "Development Possible", step: 2 },
   { language: "jquery", level: "Development Possible", step: 2 },
 ];
 
@@ -20,6 +18,7 @@ const backLanguageData = [
 
 const etcLanguageData = [
   { language: "C/C++", level: "Development Possible", step: 2 },
+  { language: "C#", level: "Experienced", step: 1 },
   { language: "Elastic Search", level: "Experienced", step: 1 },
   { language: "Webpack", level: "Experienced", step: 1 },
   { language: "Git/Github", level: "Development Possible", step: 2 },
